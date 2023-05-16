@@ -1,0 +1,409 @@
+:root {
+  --primary: #eb1ccc;
+  --secondary: #95989a;
+  --text-color: #fff;
+  --text-secondary: #000;
+  --text-tertiary: #5d5d5d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  box-sizing: border-box;
+}
+
+/*Event Form*/
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../assets/hrz-5.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 85vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--text-color);
+}
+header .disclaimer {
+  font-size: 1.2em;
+  margin-bottom: 3em;
+}
+header .disclaimer #event-date,
+header .disclaimer h2 {
+  color: var(--primary);
+}
+header .disclaimer #event-date {
+  font-weight: bold;
+}
+header .disclaimer h2 {
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+header .disclaimer #event {
+  font-size: 2em;
+  text-transform: uppercase;
+  max-width: 350px;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+header .form {
+  background-color: var(--secondary);
+  padding: 2em;
+  max-width: 22%;
+}
+header .form p {
+  font-size: 1.8em;
+  color: var(--text-secondary);
+  margin-bottom: 1em;
+}
+header .form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.8em;
+}
+header .form label {
+  color: var(--text-tertiary);
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+header .form input,
+header .form select {
+  padding: 6px 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+header .form .btn {
+  text-align: center;
+  padding: 15px 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: var(--primary);
+  color: var(--text-color);
+  text-transform: uppercase;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  opacity: 0.8;
+}
+header .form .btn:hover {
+  opacity: 1;
+}
+
+/*benefits*/
+.key-benefits h2 {
+  background-color: var(--secondary);
+  text-align: center;
+  padding: 2em;
+  font-weight: 500;
+}
+.key-benefits .benefits {
+  display: flex;
+  justify-content: space-around;
+  padding: 4em;
+  width: 80%;
+  margin: 0 auto;
+}
+.key-benefits .benefit {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 20%;
+  color: var(--text-tertiary);
+}
+.key-benefits .benefit-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  color: var(--primary);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1em;
+}
+.key-benefits .benefit #benefit-1 {
+  background-image: url(../assets/sqr-1.jpg);
+}
+.key-benefits .benefit #benefit-2 {
+  background-image: url(../assets/sqr-2.jpg);
+}
+.key-benefits .benefit #benefit-3 {
+  background-image: url(../assets/sqr-3.jpg);
+}
+
+/*location*/
+.location {
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../assets/hrz-1.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--text-color);
+  margin-bottom: 3em;
+}
+.location .adrress {
+  max-width: 30%;
+}
+.location .adrress-details {
+  text-align: center;
+  font-size: 1.3em;
+}
+.location .about-location {
+  max-width: 30%;
+}
+.location .about-location h3 {
+  color: var(--primary);
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+.location .about-location p {
+  line-height: 1.5em;
+}
+.location i {
+  color: var(--primary);
+  font-size: 4em;
+  margin-right: 0.5em;
+}
+
+/*Event*/
+.events {
+  width: 80%;
+  margin: 0 auto;
+}
+.events-itens {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 5%;
+  margin-bottom: 4em;
+}
+.events-itens img {
+  width: 50%;
+}
+.events-itens h3 {
+  margin-bottom: 1em;
+  font-size: 2em;
+  font-weight: 500;
+}
+.events #itens-1 h3 {
+  margin-bottom: 1em;
+  font-size: 3em;
+  font-weight: 700;
+}
+.events-description {
+  width: 100%;
+  padding-left: 2em;
+}
+.events-description ul {
+  list-style-position: inside;
+}
+.events-description ul li {
+  margin-bottom: 0.4em;
+}
+.events-description ul li:last-child {
+  font-weight: bold;
+}
+
+/* call to action*/
+.cta {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../assets/hrz-5.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  height: 200px;
+}
+.cta h3 {
+  margin-bottom: 1.2em;
+  font-size: 2em;
+  font-weight: 500;
+}
+.cta-btn {
+  text-align: center;
+  padding: 15px 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: var(--primary);
+  color: var(--text-color);
+  text-transform: uppercase;
+  border: none;
+  width: 30%;
+  cursor: pointer;
+  opacity: 0.8;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+.cta-btn:hover {
+  opacity: 1;
+}
+
+/*Footer*/
+.footer {
+  text-align: center;
+  color: var(--text-tertiary);
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer h3 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+.footer p:nth-child(2) {
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}
+
+/*laptop*/
+@media (max-width: 1035px) {
+  header .form {
+    max-width: 40%;
+  }
+  .key-benefits .benefits {
+    width: 100%;
+  }
+  .key-benefits .benefit-img {
+    width: 200px;
+    height: 200px;
+  }
+}
+/*Tablet*/
+@media (max-width: 800px) {
+  header .form {
+    max-width: 45%;
+  }
+  .key-benefits .benefits {
+    width: 100%;
+  }
+  .key-benefits .benefit-img {
+    width: 200px;
+    height: 200px;
+  }
+  .location i {
+    margin-left: 0.6em;
+  }
+  .location .about-location p {
+    font-size: 1.1em;
+  }
+  .events-itens {
+    flex-direction: column;
+    margin-bottom: 0.5em;
+    gap: 0;
+  }
+  .events-itens img {
+    width: 100%;
+    margin: 2em 0;
+  }
+  .events #itens-1 img {
+    display: none;
+  }
+  .events-description {
+    padding: 0;
+  }
+  .events #itens-3 img {
+    order: 2;
+  }
+  .events #itens-3 .events-description {
+    order: 1;
+  }
+  .cta-btn {
+    width: 80%;
+    opacity: 1;
+  }
+}
+/*Mobile*/
+@media (max-width: 450px) {
+  /*Event*/
+  header {
+    flex-direction: column;
+    height: auto;
+  }
+  header .disclaimer {
+    padding: 2em;
+  }
+  header .disclaimer h2 {
+    margin-bottom: 0.5em;
+  }
+  header .form {
+    max-width: 70%;
+    margin-bottom: 2em;
+  }
+  /*Benefits*/
+  .benefits {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding: 2em;
+  }
+  .benefit {
+    max-width: 100%;
+    margin-bottom: 2em;
+  }
+  /*Event*/
+  .location {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 2em 0;
+  }
+  .location .adrress {
+    order: 2;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .location i {
+    margin: 0.3em 0;
+  }
+  .location .about-location {
+    order: 1;
+    max-width: 100%;
+  }
+  .location .about-location h3 {
+    margin-bottom: 0;
+  }
+  .location .about-location p {
+    display: none;
+  }
+  /*Event*/
+  .events-itens {
+    flex-direction: column;
+    margin-bottom: 0.5em;
+    gap: 0;
+  }
+  .events-itens img {
+    width: 100%;
+    margin: 2em 0;
+  }
+  .events #itens-1 img {
+    display: none;
+  }
+  .events-description {
+    padding: 0;
+  }
+  .events #itens-3 img {
+    order: 2;
+  }
+  .events #itens-3 .events-description {
+    order: 1;
+  }
+  /*Cta*/
+  .cta-btn {
+    width: 80%;
+    opacity: 1;
+  }
+  .cta h3 {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
